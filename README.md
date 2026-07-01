@@ -1,0 +1,504 @@
+## Hi there 👋
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İrem & Yasin — Nişan Davetiyesi</title>
+
+<meta property="og:title" content="İrem & Yasin — Nişan Davetiyesi">
+<meta property="og:description" content="Mutluluğumuzu paylaşmanız dileğiyle… 3 Ağustos 2026 Pazartesi günü nişanımıza davetlisiniz.">
+<meta property="og:image" content="https://yeces46.github.io/onizleme.jpg">
+<meta property="og:url" content="https://yeces46.github.io/">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Marcellus&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory: #FBF6EC;
+    --ivory-deep: #F1E6CF;
+    --ink: #211D17;
+    --ink-soft: #6B6052;
+    --gold: #B6884F;
+    --gold-light: #E3C17E;
+    --gold-deep: #8C652F;
+    --gold-pale: #ECDCAE;
+    --sage: #6F8A55;
+    --space-2: 16px;
+    --space-3: 28px;
+    --space-4: 48px;
+    --space-5: 64px;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--ivory);
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .stage{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4) var(--space-3);
+    background:
+      repeating-linear-gradient(135deg, transparent 0 18px, rgba(182,136,79,0.07) 18px 19px),
+      radial-gradient(ellipse at 50% 0%, var(--ivory-deep) 0%, var(--ivory) 62%);
+  }
+
+  .card{
+    position: relative;
+    width: 100%;
+    max-width: 660px;
+    background: var(--ivory);
+    padding: 0 0 var(--space-5);
+    text-align: center;
+    box-shadow:
+      0 0 0 1px rgba(182,136,79,0.35),
+      0 40px 110px -45px rgba(33, 29, 23, 0.65),
+      0 0 90px -30px rgba(182,136,79,0.45);
+    opacity: 0;
+    transform: translateY(18px);
+    animation: rise 1.1s cubic-bezier(.22,.61,.36,1) 0.15s forwards;
+    overflow: hidden;
+  }
+
+  /* Gilded Corners */
+  .corner-decor {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.8;
+  }
+  .corner-tl { top: 15px; left: 15px; }
+  .corner-tr { top: 15px; right: 15px; transform: scaleX(-1); }
+  .corner-bl { bottom: 15px; left: 15px; transform: scaleY(-1); }
+  .corner-br { bottom: 15px; right: 15px; transform: scale(-1, -1); }
+
+  @keyframes rise{ to{ opacity: 1; transform: translateY(0); } }
+
+  .hero{ position: relative; width: 100%; line-height: 0; background: #110D08; border-bottom: 2px solid var(--gold-deep); }
+  .hero svg{ display: block; width: 100%; height: auto; }
+
+  .content{ position: relative; z-index: 2; padding: var(--space-4) var(--space-4) 0; }
+
+  .eyebrow{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    margin: 0 0 var(--space-3);
+    text-shadow: 0 1px 3px rgba(182,136,79,0.2);
+    font-weight: 500;
+  }
+
+  .monogram{ width: 115px; margin: -85px auto var(--space-3); position: relative; z-index: 3; opacity: 0; animation: fadeIn 1.2s ease 0.4s forwards; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15)); }
+
+  @keyframes fadeIn{ to{ opacity: 1; } }
+
+  .names{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 8vw, 56px);
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0 0 var(--space-2);
+    background: linear-gradient(100deg, var(--gold-deep) 0%, #F5D79B 25%, var(--ink) 45%, var(--ink) 55%, #F5D79B 75%, var(--gold-deep) 100%);
+    background-size: 220% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 6s ease-in-out infinite;
+    text-shadow: 0px 4px 20px rgba(182, 136, 79, 0.35);
+  }
+  @keyframes shimmer{ 0%{ background-position: 0% 50%; } 50%{ background-position: 100% 50%; } 100%{ background-position: 0% 50%; } }
+
+  .names-row{ display: flex; align-items: center; justify-content: center; gap: 18px; margin: 8px 0; }
+  .names-row .line{ height: 1.5px; width: 60px; background: linear-gradient(90deg, transparent, var(--gold)); }
+  .names-row .line.r{ background: linear-gradient(90deg, var(--gold), transparent); }
+  .amp{ display: block; font-style: italic; font-weight: 500; color: var(--gold); font-size: 34px; -webkit-text-fill-color: var(--gold); text-shadow: 0 2px 10px rgba(182,136,79,0.3); }
+
+  .tagline{ font-style: italic; color: var(--ink-soft); font-size: 21px; margin: 0 auto var(--space-3); font-weight: 500; }
+
+  .pearl-divider{ display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0 auto var(--space-4); width: 250px; }
+  .pearl-divider .pl{ height: 1.5px; flex: 1; background: var(--gold-pale); }
+  .pearl-divider .pd{ width: 5px; height: 5px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 5px var(--gold-light); }
+  .pearl-divider .pd.big{ width: 8px; height: 8px; }
+
+  .families{
+    display: flex; align-items: center; justify-content: center; gap: 24px;
+    margin: 0 0 var(--space-4);
+    font-family: 'Montserrat', sans-serif; font-size: 13px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--ink); font-weight: 500;
+  }
+  .families .famp{ font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--gold); font-size: 24px; }
+
+  .details{ display: flex; flex-direction: column; gap: 26px; margin: 0 auto var(--space-4); max-width: 420px; text-align: left; }
+  .detail-row{ display: flex; align-items: flex-start; gap: 18px; }
+  .badge{
+    flex: none; width: 48px; height: 48px; border-radius: 50%;
+    background: radial-gradient(circle at 32% 28%, #4a4030, var(--ink) 72%);
+    box-shadow: 0 0 0 1.5px var(--gold-pale), 0 6px 12px -4px rgba(33,29,23,0.6);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .badge svg{ width: 22px; height: 22px; }
+  .detail-label{ font-family: 'Montserrat', sans-serif; font-size: 11.5px; letter-spacing: 3.5px; color: var(--gold-deep); text-transform: uppercase; margin: 4px 0 6px; font-weight: 600;}
+  .detail-value{ font-size: 22px; color: var(--ink); margin: 0; line-height: 1.45; font-weight: 600;}
+  .detail-sub{ font-size: 17px; color: var(--ink-soft); margin: 2px 0 0; font-weight: 500; }
+  .map-link{
+    display: inline-block; margin-top: 8px; font-family: 'Montserrat', sans-serif; font-size: 11.5px;
+    letter-spacing: 2px; text-transform: uppercase; color: var(--gold-deep); text-decoration: none;
+    border-bottom: 1.5px solid var(--gold-light); padding-bottom: 2px; font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .map-link:hover{ color: var(--ink); border-color: var(--ink); text-shadow: 0 0 8px rgba(182,136,79,0.4); }
+
+  .footer-line{ font-style: italic; color: var(--ink-soft); font-size: 18px; margin: var(--space-3) 0 var(--space-2); font-weight: 500; }
+  .footer-heart{ width: 18px; opacity: 0.9; margin: 0 auto; filter: drop-shadow(0 2px 4px rgba(182,136,79,0.4)); }
+
+  .twinkle{ animation: tw 3.6s ease-in-out infinite; }
+  .twinkle-fast{ animation: tw 1.8s ease-in-out infinite; }
+  .twinkle-alt{ animation: tw 2.5s ease-in-out infinite reverse; }
+  
+  @keyframes tw{ 0%,100%{ opacity: 0.1; transform: scale(0.9); } 50%{ opacity: 1; transform: scale(1.2); } }
+
+  @media (prefers-reduced-motion: reduce){
+    .card, .monogram, .names, .twinkle, .twinkle-fast, .twinkle-alt{ animation: none !important; opacity: 1 !important; transform: none !important; background-position: 0 0 !important; }
+  }
+
+  @media (max-width: 480px){
+    .content{ padding: var(--space-4) var(--space-2) 0; }
+    .families{ gap: 14px; font-size: 11.5px; letter-spacing: 1.5px; }
+    .corner-decor { width: 60px; height: 60px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <div class="card">
+    
+    <svg class="corner-decor corner-tl" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0 V 100 C 0 44.77 44.77 0 100 0 H 0 Z" fill="url(#cornerGrad)" opacity="0.3"/>
+      <path d="M10 10 L 40 10 C 40 26.57 26.57 40 10 40 L 10 10 Z" stroke="var(--gold-deep)" stroke-width="1.5" fill="none"/>
+      <path d="M15 15 L 70 15 C 70 45.37 45.37 70 15 70 L 15 15 Z" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+      <circle cx="20" cy="20" r="3" fill="var(--gold-light)"/>
+      <defs>
+        <linearGradient id="cornerGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#B6884F"/>
+          <stop offset="1" stop-color="#ECDCAE" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <svg class="corner-decor corner-tr" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0 V 100 C 0 44.77 44.77 0 100 0 H 0 Z" fill="url(#cornerGrad)" opacity="0.3"/>
+      <path d="M10 10 L 40 10 C 40 26.57 26.57 40 10 40 L 10 10 Z" stroke="var(--gold-deep)" stroke-width="1.5" fill="none"/>
+      <path d="M15 15 L 70 15 C 70 45.37 45.37 70 15 70 L 15 15 Z" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+      <circle cx="20" cy="20" r="3" fill="var(--gold-light)"/>
+    </svg>
+
+    <div class="hero">
+      <svg viewBox="0 0 600 480" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="heroBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0E0B07"/>
+            <stop offset="45%" stop-color="#221B12"/>
+            <stop offset="100%" stop-color="#332817"/>
+          </linearGradient>
+          <radialGradient id="warmGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FFB066" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#FFB066" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="ledGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FFF5D6" stop-opacity="1"/>
+            <stop offset="50%" stop-color="#FFD770" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#FFB066" stop-opacity="0"/>
+          </radialGradient>
+          <pattern id="pleats" width="9" height="12" patternUnits="userSpaceOnUse">
+            <rect width="9" height="12" fill="#F4ECDA"/>
+            <line x1="2" y1="0" x2="2" y2="12" stroke="#E2D3AC" stroke-width="1"/>
+          </pattern>
+          <linearGradient id="ribbonGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#F0D38C"/>
+            <stop offset="50%" stop-color="#FFEDB3"/>
+            <stop offset="100%" stop-color="#A87C3F"/>
+          </linearGradient>
+          <clipPath id="heroClip"><rect width="600" height="480"/></clipPath>
+        </defs>
+
+        <g clip-path="url(#heroClip)">
+          <rect width="600" height="480" fill="url(#heroBg)"/>
+          <ellipse cx="455" cy="320" rx="170" ry="180" fill="url(#warmGlow)"/>
+          <ellipse cx="120" cy="280" rx="140" ry="160" fill="url(#warmGlow)" opacity="0.5"/>
+          <ellipse cx="300" cy="100" rx="200" ry="150" fill="url(#warmGlow)" opacity="0.3"/>
+
+          <g opacity="0.75" stroke="#7A5A2A" stroke-width="0.8" fill="#4a3b25">
+            <path d="M40 380 Q 70 350 90 390 Q 60 410 40 380 Z" fill="#6c5636"/>
+            <path d="M30 400 Q 60 370 70 420 Q 30 430 30 400 Z" fill="#58452a"/>
+            <circle cx="65" cy="395" r="15" fill="#8C652F" opacity="0.8"/>
+            <circle cx="65" cy="395" r="8" fill="#B6884F"/>
+            <path d="M80 370 Q 110 340 120 380 Q 90 400 80 370 Z" fill="#58452a"/>
+            <path d="M550 370 Q 520 340 500 380 Q 530 400 550 370 Z" fill="#6c5636"/>
+            <path d="M570 390 Q 540 360 530 410 Q 570 420 570 390 Z" fill="#58452a"/>
+            <circle cx="535" cy="385" r="16" fill="#8C652F" opacity="0.8"/>
+            <circle cx="535" cy="385" r="9" fill="#B6884F"/>
+            <path d="M510 360 Q 480 330 470 370 Q 500 390 510 360 Z" fill="#58452a"/>
+          </g>
+
+          <g stroke="#3C4D29" stroke-width="2.5" fill="none" opacity="0.95">
+            <path d="M30 0C28 36 36 62 26 110"/>
+            <path d="M95 0C92 32 102 56 90 100"/>
+            <path d="M165 0C162 26 172 50 160 90"/>
+            <path d="M235 0C232 22 240 44 228 80"/>
+            <path d="M305 0C302 26 312 50 300 95"/>
+            <path d="M375 0C372 30 382 54 370 100"/>
+            <path d="M445 0C442 34 452 60 440 110"/>
+            <path d="M515 0C512 38 522 66 510 120"/>
+            <path d="M575 0C572 32 580 56 570 100"/>
+          </g>
+          <g fill="#4F6B36" opacity="0.9">
+            <ellipse cx="28" cy="60" rx="8" ry="4" transform="rotate(20 28 60)"/>
+            <ellipse cx="93" cy="54" rx="8" ry="4" transform="rotate(15 93 54)"/>
+            <ellipse cx="163" cy="48" rx="7" ry="3.5" transform="rotate(18 163 48)"/>
+            <ellipse cx="233" cy="44" rx="7" ry="3.5" transform="rotate(-12 233 44)"/>
+            <ellipse cx="303" cy="50" rx="7" ry="3.5" transform="rotate(16 303 50)"/>
+            <ellipse cx="373" cy="54" rx="7" ry="3.5" transform="rotate(-14 373 54)"/>
+            <ellipse cx="443" cy="58" rx="7" ry="3.5" transform="rotate(18 443 58)"/>
+            <ellipse cx="513" cy="62" rx="7" ry="3.5" transform="rotate(-16 513 62)"/>
+            <ellipse cx="573" cy="56" rx="7" ry="3.5" transform="rotate(14 573 56)"/>
+          </g>
+
+          <g>
+            <line x1="45" y1="20" x2="45" y2="220" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+            <line x1="85" y1="40" x2="85" y2="180" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+            <line x1="120" y1="34" x2="120" y2="250" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+            <line x1="160" y1="50" x2="160" y2="150" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+            <line x1="195" y1="30" x2="195" y2="280" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+            <line x1="380" y1="32" x2="380" y2="210" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+            <line x1="420" y1="40" x2="420" y2="260" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+            <line x1="480" y1="36" x2="480" y2="160" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+            <line x1="510" y1="50" x2="510" y2="290" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+            <line x1="550" y1="30" x2="550" y2="190" stroke="#6b5a3a" stroke-width="0.7" opacity="0.6"/>
+
+            <circle class="twinkle" cx="45" cy="222" r="5" fill="url(#ledGlow)" style="animation-delay:0.1s"/>
+            <circle class="twinkle-fast" cx="85" cy="182" r="6" fill="url(#ledGlow)" style="animation-delay:0.5s"/>
+            <circle class="twinkle-alt" cx="120" cy="252" r="7" fill="url(#ledGlow)" style="animation-delay:1.2s"/>
+            <circle class="twinkle" cx="160" cy="152" r="5" fill="url(#ledGlow)" style="animation-delay:2.1s"/>
+            <circle class="twinkle-fast" cx="195" cy="282" r="6" fill="url(#ledGlow)" style="animation-delay:0.8s"/>
+            <circle class="twinkle-alt" cx="380" cy="212" r="6" fill="url(#ledGlow)" style="animation-delay:0.4s"/>
+            <circle class="twinkle" cx="420" cy="262" r="7" fill="url(#ledGlow)" style="animation-delay:1.6s"/>
+            <circle class="twinkle-fast" cx="480" cy="162" r="5" fill="url(#ledGlow)" style="animation-delay:0.9s"/>
+            <circle class="twinkle-alt" cx="510" cy="292" r="8" fill="url(#ledGlow)" style="animation-delay:2.5s"/>
+            <circle class="twinkle" cx="550" cy="192" r="6" fill="url(#ledGlow)" style="animation-delay:1.1s"/>
+            
+            <circle class="twinkle-fast" cx="100" cy="90" r="3" fill="#FFF"/>
+            <circle class="twinkle" cx="220" cy="120" r="4" fill="#FFDA9E" style="animation-delay:1.5s"/>
+            <circle class="twinkle-alt" cx="400" cy="80" r="3" fill="#FFF" style="animation-delay:0.3s"/>
+            <circle class="twinkle-fast" cx="460" cy="110" r="4" fill="#FFDA9E" style="animation-delay:2.2s"/>
+          </g>
+
+          <rect x="40" y="108" width="520" height="372" fill="url(#pleats)" opacity="0.95"/>
+          <rect x="40" y="108" width="520" height="372" fill="#1c170f" opacity="0.12"/>
+
+          <polygon points="55,106 110,106 470,480 415,480" fill="#FBF6EC" opacity="0.98"/>
+          <polygon points="545,106 490,106 130,480 185,480" fill="#F3E9D2" opacity="0.98"/>
+          <g stroke="#E2CE9C" stroke-width="0.8" opacity="0.7">
+            <line x1="70" y1="106" x2="430" y2="480"/>
+            <line x1="80" y1="106" x2="440" y2="480"/>
+            <line x1="95" y1="106" x2="455" y2="480"/>
+            <line x1="530" y1="106" x2="170" y2="480"/>
+            <line x1="518" y1="106" x2="158" y2="480"/>
+            <line x1="505" y1="106" x2="145" y2="480"/>
+          </g>
+
+          <g fill="#FBF6EC" stroke="#D8C691" stroke-width="0.6">
+            <circle cx="95" cy="150" r="3.5"/><circle cx="125" cy="158" r="3.5"/><circle cx="158" cy="164" r="3.8"/>
+            <circle cx="195" cy="170" r="4"/><circle cx="235" cy="174" r="4"/><circle cx="278" cy="176" r="4.2"/>
+            <circle cx="322" cy="174" r="4"/><circle cx="365" cy="170" r="4"/><circle cx="402" cy="164" r="3.8"/>
+            <circle cx="435" cy="158" r="3.5"/><circle cx="463" cy="150" r="3.5"/>
+          </g>
+
+          <g fill="#FBF6EC" stroke="#D8C691" stroke-width="0.8">
+            <circle cx="255" cy="118" r="16"/><circle cx="280" cy="106" r="19"/><circle cx="308" cy="114" r="18"/>
+            <circle cx="335" cy="104" r="19"/><circle cx="362" cy="116" r="16"/><circle cx="295" cy="94" r="15"/>
+            <circle cx="240" cy="104" r="13"/><circle cx="378" cy="102" r="13"/>
+          </g>
+          <g fill="#E9DBB0" opacity="0.8">
+            <circle cx="262" cy="114" r="3.5"/><circle cx="288" cy="101" r="3.5"/><circle cx="318" cy="109" r="3.5"/>
+            <circle cx="345" cy="99" r="3.5"/><circle cx="300" cy="89" r="3"/>
+          </g>
+
+          <g stroke="#E9DFC6" stroke-width="2.5" fill="none" opacity="0.95" stroke-linecap="round">
+            <path d="M213 218C213 200 297 200 297 218L297 312L213 312Z"/>
+            <line x1="205" y1="312" x2="305" y2="312"/>
+            <line x1="210" y1="312" x2="206" y2="442"/>
+            <line x1="300" y1="312" x2="304" y2="442"/>
+            <path d="M303 218C303 200 387 200 387 218L387 312L303 312Z"/>
+            <line x1="295" y1="312" x2="395" y2="312"/>
+            <line x1="300" y1="312" x2="296" y2="442"/>
+            <line x1="390" y1="312" x2="394" y2="442"/>
+          </g>
+
+          <g filter="drop-shadow(3px 5px 8px rgba(0,0,0,0.5))">
+            <path d="M230,300 C210,340 195,395 180,465 L332,465 C317,395 302,340 282,300 Z" fill="#0c0a08"/>
+            <path d="M230,300 C215,340 205,395 195,465 L270,465 C260,395 260,340 250,300 Z" fill="#181410" opacity="0.4"/>
+            <path d="M224,262 L288,262 L280,300 L232,300 Z" fill="#120f0c"/>
+            <line x1="240" y1="268" x2="234" y2="318" stroke="#120f0c" stroke-width="13" stroke-linecap="round"/>
+            <circle cx="234" cy="320" r="6.5" fill="#120f0c"/>
+            <line x1="270" y1="266" x2="299" y2="206" stroke="#120f0c" stroke-width="13.5" stroke-linecap="round"/>
+            <circle cx="300" cy="203" r="6" fill="#120f0c"/>
+            <line x1="256" y1="238" x2="256" y2="252" stroke="#120f0c" stroke-width="11" stroke-linecap="round"/>
+            <circle cx="256" cy="224" r="16.5" fill="#120f0c"/>
+            <path d="M240,220C240,202 273,202 273,220C273,212 265,208 256,208C247,208 240,212 240,220Z" fill="#000"/>
+            <circle cx="247" cy="234" r="8" fill="#000"/>
+            <line x1="232" y1="300" x2="280" y2="300" stroke="#000" stroke-width="4" opacity="0.6"/>
+          </g>
+
+          <g filter="drop-shadow(-3px 5px 8px rgba(0,0,0,0.5))">
+            <line x1="328" y1="352" x2="326" y2="458" stroke="#120f0c" stroke-width="23" stroke-linecap="round"/>
+            <line x1="364" y1="352" x2="366" y2="458" stroke="#120f0c" stroke-width="23" stroke-linecap="round"/>
+            <line x1="328" y1="352" x2="326" y2="458" stroke="#1f1a14" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+            <ellipse cx="324" cy="460" rx="10" ry="5.5" fill="#0a0806"/>
+            <ellipse cx="368" cy="460" rx="10" ry="5.5" fill="#0a0806"/>
+            <path d="M310,262 L386,262 L378,352 L318,352 Z" fill="#120f0c"/>
+            <path d="M340,266 L352,266 L348,300 L344,300 Z" fill="#0a0806"/>
+            <path d="M320,262 L340,305 L318,352 Z" fill="#1c1712" opacity="0.2"/>
+            <line x1="378" y1="270" x2="375" y2="324" stroke="#120f0c" stroke-width="14.5" stroke-linecap="round"/>
+            <circle cx="375" cy="326" r="7" fill="#120f0c"/>
+            <line x1="340" y1="268" x2="303" y2="206" stroke="#120f0c" stroke-width="14.5" stroke-linecap="round"/>
+            <circle cx="302" cy="203" r="6" fill="#120f0c"/>
+            <line x1="348" y1="238" x2="348" y2="252" stroke="#120f0c" stroke-width="12" stroke-linecap="round"/>
+            <circle cx="348" cy="224" r="17.5" fill="#120f0c"/>
+            <path d="M330,221C330,200 366,200 366,221C366,211 358,205 348,205C338,205 330,211 330,221Z" fill="#000"/>
+          </g>
+
+          <g filter="drop-shadow(0 2px 5px rgba(0,0,0,0.6))">
+            <path d="M292 168C286 158 298 152 304 162C310 152 322 158 316 168C310 176 298 176 292 168Z" fill="url(#ribbonGold)" stroke="#FFF" stroke-width="0.8"/>
+            <circle cx="304" cy="168" r="3.5" fill="#5c3f18"/>
+            <line x1="297" y1="174" x2="294" y2="198" stroke="url(#ribbonGold)" stroke-width="3"/>
+            <line x1="311" y1="174" x2="313" y2="198" stroke="url(#ribbonGold)" stroke-width="3"/>
+            <circle cx="295" cy="202" r="9" fill="none" stroke="url(#ribbonGold)" stroke-width="2.5"/>
+            <circle cx="311" cy="202" r="9" fill="none" stroke="url(#ribbonGold)" stroke-width="2.5"/>
+            <g transform="translate(332,188) rotate(28)">
+              <path d="M0 0L28 -5" stroke="#E3C17E" stroke-width="2"/>
+              <path d="M0 0L28 5" stroke="#E3C17E" stroke-width="2"/>
+              <circle cx="-3" cy="-7" r="4.5" fill="none" stroke="#FFF" stroke-width="1.8"/>
+              <circle cx="-3" cy="7" r="4.5" fill="none" stroke="#FFF" stroke-width="1.8"/>
+              <circle cx="0" cy="0" r="1.5" fill="#8C652F"/>
+            </g>
+          </g>
+
+          <circle class="twinkle-fast" cx="500" cy="56" r="2" fill="#F0D38C"/>
+          <circle class="twinkle" cx="80" cy="140" r="1.8" fill="#FFF" style="animation-delay:1.2s"/>
+          <circle class="twinkle-alt" cx="540" cy="210" r="2" fill="#F0D38C" style="animation-delay:2s"/>
+          <circle class="twinkle-fast" cx="40" cy="300" r="1.8" fill="#FFF" style="animation-delay:0.6s"/>
+        </g>
+
+        <rect x="1.5" y="1.5" width="597" height="477" fill="none" stroke="url(#ribbonGold)" stroke-opacity="0.8" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <div class="content">
+      <div class="monogram">
+        <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="70" cy="70" r="60" fill="#FBF6EC" stroke="#B6884F" stroke-width="1.5"/>
+          <circle cx="70" cy="70" r="54" stroke="#ECDCAE" stroke-width="1" stroke-dasharray="4 4"/>
+          <text x="54" y="81" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="42" font-weight="600" fill="#211D17">İ</text>
+          <line x1="70" y1="56" x2="70" y2="86" stroke="#B6884F" stroke-width="1.5"/>
+          <text x="88" y="81" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="42" font-weight="600" fill="#211D17">Y</text>
+          <path d="M38 102C50 114 90 114 102 102" stroke="#6F8A55" stroke-width="1.5" fill="none" opacity="0.8"/>
+          <path d="M68 98C68 102 72 104 72 108C72 104 76 102 76 98C76 95 73 94 72 96C71 94 68 95 68 98Z" fill="#B6884F"/>
+        </svg>
+      </div>
+
+      <p class="eyebrow">Nişan Davetiyesi</p>
+
+      <h1 class="names">
+        <div>İrem</div>
+        <div class="names-row"><span class="line"></span><span class="amp">&</span><span class="line r"></span></div>
+        <div>Yasin</div>
+      </h1>
+
+      <p class="tagline">Nişanımıza davetlisiniz.</p>
+
+      <div class="pearl-divider">
+        <span class="pl"></span><span class="pd"></span><span class="pd big"></span><span class="pd"></span><span class="pl"></span>
+      </div>
+
+      <div class="families">
+        <span>Ünal Ailesi</span>
+        <span class="famp">&</span>
+        <span>Ece Ailesi</span>
+      </div>
+
+      <div class="details">
+        <div class="detail-row">
+          <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#E3C17E" stroke-width="1.6"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 9.5h17"/><path d="M8 3v3M16 3v3"/><path d="M8.5 14l1.4 1.4L13.5 12"/></svg>
+          </div>
+          <div>
+            <p class="detail-label">Tarih</p>
+            <p class="detail-value">03 Ağustos 2026, Pazartesi</p>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#E3C17E" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg>
+          </div>
+          <div>
+            <p class="detail-label">Saat</p>
+            <p class="detail-value">19:00</p>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#E3C17E" stroke-width="1.6"><path d="M12 21s7-7.4 7-12.5A7 7 0 1 0 5 8.5C5 13.6 12 21 12 21Z"/><circle cx="12" cy="8.5" r="2.4"/></svg>
+          </div>
+          <div>
+            <p class="detail-label">Adres</p>
+            <p class="detail-value">Pınarbaşı Kale Düğün ve Kına Salonu</p>
+            <p class="detail-sub">Elbistan / Kahramanmaraş</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Pınarbaşı+Kale+Düğün+Salonu+Elbistan+Kahramanmaraş" target="_blank" rel="noopener">Haritada Gör</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-line">Mutluluğumuzu paylaşmanız dileğiyle…</p>
+      <svg class="footer-heart" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20s-7-4.7-9.5-9.3C1 7.6 2.6 4.5 6 4.5c2.2 0 3.6 1.4 4.5 2.7C11.4 5.9 12.8 4.5 15 4.5c3.4 0 5 3.1 3.5 6.2C19 15.3 12 20 12 20Z" stroke="#B6884F" stroke-width="1.5"/></svg>
+    </div>
+    
+    <svg class="corner-decor corner-bl" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0 V 100 C 0 44.77 44.77 0 100 0 H 0 Z" fill="url(#cornerGrad)" opacity="0.3"/>
+      <path d="M10 10 L 40 10 C 40 26.57 26.57 40 10 40 L 10 10 Z" stroke="var(--gold-deep)" stroke-width="1.5" fill="none"/>
+      <path d="M15 15 L 70 15 C 70 45.37 45.37 70 15 70 L 15 15 Z" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+      <circle cx="20" cy="20" r="3" fill="var(--gold-light)"/>
+    </svg>
+    <svg class="corner-decor corner-br" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0 V 100 C 0 44.77 44.77 0 100 0 H 0 Z" fill="url(#cornerGrad)" opacity="0.3"/>
+      <path d="M10 10 L 40 10 C 40 26.57 26.57 40 10 40 L 10 10 Z" stroke="var(--gold-deep)" stroke-width="1.5" fill="none"/>
+      <path d="M15 15 L 70 15 C 70 45.37 45.37 70 15 70 L 15 15 Z" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+      <circle cx="20" cy="20" r="3" fill="var(--gold-light)"/>
+    </svg>
+
+  </div>
+</div>
+
+</body>
+</html>
